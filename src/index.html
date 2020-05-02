@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      table{
+        border: solid 1px #000000;
+        border-collapse: collapse;
+      }
+      th {border: solid 1px #000000}
+      td {border: solid 1px #000000}
+    </style>
+  </head>
+  <body>
+    <h2>Hello World</h2>
+    <form method="post" action="公開時のアプリケーションのURLを入れる">
+    
+      <label>name：<input type="text" name="name"></label>
+    
+    
+      <label>value：<input type="text" name="value"></label>
+    
+    
+      <input type="submit" value="送信する">
+    
+  </form>
+  <table>
+      <?
+        // スプレッドシートからデータを取得
+        var data = getData();
+        
+        // テーブルの見出し作成
+        output.append('<tr>');
+        output.append('<th>' + data[0][0] + '</th>');
+        output.append('<th>' + data[0][1] + '</th>');
+        output.append('<th>' + data[0][2] + '</th>');
+        output.append('<th>' + data[0][3] + '</th>');
+        output.append('</tr>');
+        
+        // テーブルを作成
+        for(var i=1;i<data.length;i++){
+          output.append('<tr>');
+          output.append('<td>' + data[i][0] + '</td>');
+          output.append('<td>' + data[i][1] + '</td>');
+          output.append('<td>' + data[i][2] + '</td>');
+          output.append('<td>' + data[i][3] + '</td>');
+          output.append('</tr>');
+        }
+      ?>
+   </table>
+  </body>
+</html>

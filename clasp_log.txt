@@ -1,0 +1,19 @@
+  501  clasp create clasp-sample --rootDir ./src
+  502  npx clasp create clasp-sample --rootDir ./src
+  503  npx clasp create clasp-sample --rootDir ./src
+  504  clasp login
+  505  npx clasp login
+  506  npx clasp create clasp-sample --rootDir ./src
+  507  npx clasp create clasp-sample --rootDir ./src
+  508  npx clasp create clasp-sample --rootDir ./src
+  509  npx clasp pull
+  510  npx clasp push
+  511  npx clasp push
+  512  npx clasp push --watch
+  513  npx clasp push --watch
+  514  npx clasp push
+  515  npx clasp push --watch
+  517  npx clasp push
+  540  npx clasp push
+  571  history | grep clasp
+  572  history | grep clasp > clasp_log.txt
