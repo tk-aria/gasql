@@ -47,3 +47,4 @@ V8ランタイムの有効/無効設定
 V8ランタイムが有効な状態だと HTML上のoutput.appendなどがエラーになる.
 その際,V8ランタイムではなく元々のGASのScriptEngineに戻すことで正常に動作することがあります。
 https://auto-worker.com/blog/?p=713
+https://teratail.com/questions/241930
