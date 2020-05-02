@@ -1,5 +1,14 @@
 # Google Apps Script Manual
 
+GAS
+
+- Drive連携
+  - https://yyuuiikk.org/entry/670
+- Trigger
+  - https://tonari-it.com/gas-trigger-set/
+- Webアプリケーション
+  - https://qiita.com/aromanokarisu/items/ff3076a78335163d2f12
+
 Todo
 
 シート名変更
