@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "clasp open",
+    "push": "clasp push",
+    "pull": "clasp pull",
+	"watch": "clasp push --watch",
+    "build": "node tools/build.js",
+    "build:html": "node tools/googleapp_builder.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +18,9 @@
   "devDependencies": {
     "@google/clasp": "^2.3.0",
     "@types/google-apps-script": "^1.0.13",
+    "fast-html-parser": "^1.0.1",
+    "fs-extra": "^9.0.0",
+    "request-promise": "^4.2.5",
     "tslint": "^6.1.2"
   },
   "dependencies": {}

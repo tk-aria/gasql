@@ -1,5 +1,4 @@
 import myFunc from './test';
-
 /*
 function doGet() {
 	myFunc();

@@ -8,6 +8,18 @@ GAS
   - https://tonari-it.com/gas-trigger-set/
 - Webアプリケーション
   - https://qiita.com/aromanokarisu/items/ff3076a78335163d2f12
+  - GASならではの注意点
+    -https://tonari-it.com/gas-web-app-vue-js/
+
+```
+index.html
+.js -> .javascript
+
+$ brew install rename
+
+$ rename '*.js' *.javascript
+```
+
 
 Todo
 
