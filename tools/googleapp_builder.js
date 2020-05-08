@@ -20,7 +20,11 @@ const path  = require('path');
 const readline = require("readline");
 const HTMLParser = require('fast-html-parser');
 
-const SRC_PATH = './deploy/index.html';
+if ((process.argv.length-2) < 1) {
+	console.log('Please add the platform to the argument.');
+	return;
+}
+const SRC_PATH = process.argv[2];
 const BASE_PATH = path.dirname(SRC_PATH);
 
 var htmlfile = fs.readFileSync(SRC_PATH, {encoding: 'utf-8', flag: 'r+'});
@@ -58,7 +62,7 @@ for (var cssPath of csslist) {
 	var extension = path.extname(cssPath);
 	var startPrefix = "";
 	var endPrefix = "";
-	var isMatch = false;
+	var isMatch = true;
 
 	if (isMatch |= extension.includes('js')) {
 		startPrefix = '<script>';
@@ -90,28 +94,24 @@ let output = "";
 // reader変数のonメソッドで1行ずつconsole.logを実行し行末まで繰り返す
 reader.on("line", (data) => {
 
-	//var result = data;
 	var result = data;
 
 	if (data.includes('<link ')) {
-		var index = data.indexOf('href="')
-		if (index > 0) {
-			var period = data.indexOf('"', index+7);
-			var src = data.substring( index+6, period );
 
-			var extension = path.extname(src);
+		var selector = HTMLParser.parse(data).querySelector('link');
+		if (selector.attributes.href) {
+			var extension = path.extname(selector.attributes.href);
 			if (extension.includes('js') || extension.includes('css')) {
-				result = `\t<?!= HtmlService.createHtmlOutputFromFile('${src}').getContent(); ?>`;
+				result = `\t<?!= HtmlService.createHtmlOutputFromFile('${selector.attributes.href}').getContent(); ?>`;
 			}
 		}
 	}
 
 	if (data.includes('<script ')) {
-		var index = data.indexOf('src="')
-		if (index > 0) {
-			var period = data.indexOf('"', index+6);
-			var src = data.substring( index+5, period );
-			result = `\t<?!= HtmlService.createHtmlOutputFromFile('${src}').getContent(); ?>`;
+
+		var selector = HTMLParser.parse(data).querySelector('script');
+		if (selector.attributes.src) {
+			result = `\t<?!= HtmlService.createHtmlOutputFromFile('${selector.attributes.src}').getContent(); ?>`;
 		}
 	}
 
@@ -121,24 +121,4 @@ reader.on("line", (data) => {
 stream.on('end', () => {
 	fs.writeFileSync(`${BASE_PATH}/googleapp.html`, `${output}`, {encoding: 'utf-8'});
 });
-
-// rm -r public/**/*.js
-// rm -r public/**/*.css
-// rm -r public/**/*.js.map
-
-/*
-for (var scriptPath of scriptlist) {
-	fs.unlink(`${BASE_PATH}/${scriptPath}`, (err) => {
-		if (err) throw err;
-		console.log('deleted');
-	});
-}
-
-for (var cssPath of csslist) {
-	fs.unlink(`${BASE_PATH}/${scriptPath}`, (err) => {
-		if (err) throw err;
-		console.log('deleted');
-	});
-}
-*/
 
