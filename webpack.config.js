@@ -6,9 +6,9 @@ module.exports = {
   mode: "development",
   devtool: false,
   context: __dirname,
-  entry: "./sources/index.ts",
+  entry: "./src/index.ts",
   output: {
-    path: path.join(__dirname, "deploy"),
+    path: path.join(__dirname, ".googleapp"),
     filename: "index.js",
   },
   resolve: {
