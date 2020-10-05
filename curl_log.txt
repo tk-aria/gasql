@@ -1,0 +1,37 @@
+lya29.a0Ae4lvC3Oqp2a4eHwDKFCPfOv1rmFdyEAYU2wFnT4oykBxjUr7yKqbMeX4ftohx_ibvkDYNPnIghvUHE3BY0ifyeofgPQzhqDSAbEWI8zHD8aXHVKVkPErx3IhHLECH6w-Jx1NqOoG7c7vZtwJJcuJNTWhkRo1AJ3bn4
+
+curl -X POST -H "Content-Type: application/json" -d '{"method": "append", { "key": "hogehoge", "uri": "https://hoge.com" } }' -L https://script.google.com/macros/s/AKfycbz6z7rzkI-e7Im1YniVA1zlEqLBkv06TXacggcNWktF/dev
+ https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec
+
+curl -X POST -H "Content-Type: application/json" -d '{"method": "append", { "key": "hogehoge", "uri": "https://hoge.com" } }' -L https://script.google.com/macros/s/AKfycbz6z7rzkI-e7Im1YniVA1zlEqLBkv06TXacggcNWktF/dev
+
+
+curl -X GET -L https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
+curl -X 
+curl POST -H "Content-Type: application/json" -d '{"method": "append", { "key": "hogehoge", "uri": "https://hoge.com" } }' -L https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
+
+curl -L -H "Authorization: Bearer ya29.a0Ae4lvC3Oqp2a4eHwDKFCPfOv1rmFdyEAYU2wFnT4oykBxjUr7yKqbMeX4ftohx_ibvkDYNPnIghvUHE3BY0ifyeofgPQzhqDSAbEWI8zHD8aXHVKVkPErx3IhHLECH6w-Jx1NqOoG7c7vZtwJJcuJNTWhkRo1AJ3bn4" -d '{"method": "append", "param": { "key": "hogehoge", "uri": "https://hoge.com" } }' https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
+curl -L -H "Authorization: Bearer ya29.a0Ae4lvC3Oqp2a4eHwDKFCPfOv1rmFdyEAYU2wFnT4oykBxjUr7yKqbMeX4ftohx_ibvkDYNPnIghvUHE3BY0ifyeofgPQzhqDSAbEWI8zHD8aXHVKVkPErx3IhHLECH6w-Jx1NqOoG7c7vZtwJJcuJNTWhkRo1AJ3bn4" https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
+
+curl -L https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
+
+curl -X  -H 
+
+https://script.google.com/macros/s/AKfycbz6z7rzkI-e7Im1YniVA1zlEqLBkv06TXacggcNWktF/dev
+curl -L https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
+
+"https://script.google.com/macros/s/AKfycbz6z7rzkI-e7Im1YniVA1zlEqLBkv06TXacggcNWktF/dev"
+curl -X GET 
+https://script.google.com/macros/s/AKfycbz6z7rzkI-e7Im1YniVA1zlEqLBkv06TXacggcNWktF/dev
+
+
+curl -L https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec
+curl -L https://script.googleusercontent.com/macros/echo?user_content_key=GGxLoQ1KltXDmU9vWtaS70CL2exurOGPZOcBZ3FCLBs1FwKTs5tXp_P6v6sfE8ielM2EhDL5sRUZ-E2xUAaaKKkJHhy3mTJ6m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnMMiiIuPrKHfrV-zsEq2AT30xhwg6tC25xlKPZR9f5btmcTevIGd2Rcrn8j6-Vlrkw&lib=MHevOFNqIgIl8fw5qs_rGpL3WsswNNVRW
+curl -L https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec
+
+-X POST -H 
+-L
+
+curl -L https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
+
+curl -L -d "" https://script.google.com/macros/s/AKfycbwF5PFBv1SSf0VJOljy0DhR7kG3zYen-Puc0LAUwkmE0EIeDZO9/exec > log.txt
