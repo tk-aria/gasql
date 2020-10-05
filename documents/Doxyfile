@@ -45,7 +45,7 @@ OPTIMIZE_OUTPUT_JAVA   = NO
 OPTIMIZE_FOR_FORTRAN   = NO
 OPTIMIZE_OUTPUT_VHDL   = NO
 OPTIMIZE_OUTPUT_SLICE  = NO
-EXTENSION_MAPPING      =
+EXTENSION_MAPPING      = js=JavaScript
 MARKDOWN_SUPPORT       = YES
 TOC_INCLUDE_HEADINGS   = 0
 AUTOLINK_SUPPORT       = YES
@@ -115,10 +115,11 @@ WARN_LOGFILE           =
 # Configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = ../.googleapp \
-                         ../Unity/UnityProj/Packages \
-                         ../Unity/UnityProj/Library/PackageCache
+                         ../src
 INPUT_ENCODING         = UTF-8
-FILE_PATTERNS          = *.c \
+FILE_PATTERNS          = *.js \
+                         *.ts \
+                         *.c \
                          *.cc \
                          *.cxx \
                          *.cpp \
