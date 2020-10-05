@@ -1,4 +1,4 @@
-# Google Apps Script Manual
+# gas-boilerplate
 
 gas library list
 
