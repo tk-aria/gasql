@@ -10,7 +10,8 @@
     "pull": "clasp pull",
     "watch": "clasp push --watch",
     "build": "node tools/build.js",
-    "build:html": "node tools/googleapp_builder.js"
+    "build:html": "node tools/googleapp_builder.js",
+    "build:all": "npx webpack && npx clasp push"
   },
   "keywords": [
     "GAS",
