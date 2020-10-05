@@ -1,5 +1,9 @@
 # Google Apps Script Manual
 
+gas library list
+
+- https://github.com/contributorpw/google-apps-script-awesome-list
+
 GAS
 
 - Drive連携
