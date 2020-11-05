@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate-gas",
-  "version": "1.1.0",
+  "name": "gasql",
+  "version": "0.1.0",
   "description": "template project for google apps script.",
   "main": "index.js",
   "scripts": {
@@ -43,7 +43,5 @@
     "request-promise": "^4.2.5",
     "tslint": "^6.1.2"
   },
-  "dependencies": {
-    "dayjs": "^1.8.29"
-  }
+  "dependencies": {}
 }
