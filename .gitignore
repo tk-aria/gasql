@@ -107,6 +107,7 @@ dist
 
 .googleapp/*
 !.googleapp/appsscript.json
+!.googleapp/*.ts
 !.googleapp/test.js
 .googleapp/*/*
 
